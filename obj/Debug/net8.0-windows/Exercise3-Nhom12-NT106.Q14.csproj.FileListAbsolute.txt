@@ -16,3 +16,4 @@ D:\Group-12-NT106.Q14\Exercise3-Nhom12-NT106.Q14\Exercise3-Nhom12-NT106.Q14\obj\
 D:\Group-12-NT106.Q14\Exercise3-Nhom12-NT106.Q14\Exercise3-Nhom12-NT106.Q14\obj\Debug\net8.0-windows\ref\Exercise3-Nhom12-NT106.Q14.dll
 D:\Group-12-NT106.Q14\Exercise3-Nhom12-NT106.Q14\Exercise3-Nhom12-NT106.Q14\obj\Debug\net8.0-windows\Exercise3_Nhom12_NT106.Q14.Login.resources
 D:\Group-12-NT106.Q14\Exercise3-Nhom12-NT106.Q14\Exercise3-Nhom12-NT106.Q14\obj\Debug\net8.0-windows\Exercise3_Nhom12_NT106.Q14.Register.resources
+D:\Group-12-NT106.Q14\Exercise3-Nhom12-NT106.Q14\Exercise3-Nhom12-NT106.Q14\obj\Debug\net8.0-windows\Exercise3-Nhom12-NT106.Q14.sourcelink.json

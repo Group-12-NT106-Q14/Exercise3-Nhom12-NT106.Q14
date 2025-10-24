@@ -3,6 +3,7 @@ using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Security.Cryptography;
 
 namespace ServerApp
 {
@@ -19,7 +20,7 @@ namespace ServerApp
         public void Start()
         {
             listener.Start();
-            Console.WriteLine($"✅ Server đang lắng nghe tại cổng 5000...");
+            Console.WriteLine("✅ Server đang lắng nghe tại cổng 5000...");
 
             while (true)
             {
@@ -66,10 +67,22 @@ namespace ServerApp
             }
         }
 
+        private string HashPassword(string password)
+        {
+            using (var sha256 = SHA256.Create())
+            {
+                byte[] bytes = Encoding.UTF8.GetBytes(password);
+                byte[] hash = sha256.ComputeHash(bytes);
+                return BitConverter.ToString(hash).Replace("-", "").ToLower();
+            }
+        }
+
         private string RegisterUser(string username, string password, string email, string birthday)
         {
             try
             {
+                string hashedPassword = HashPassword(password);
+
                 using (var conn = new SqliteConnection(connString))
                 {
                     conn.Open();
@@ -88,7 +101,7 @@ namespace ServerApp
                     using (var cmd = new SqliteCommand(insert, conn))
                     {
                         cmd.Parameters.AddWithValue("@u", username);
-                        cmd.Parameters.AddWithValue("@p", password);
+                        cmd.Parameters.AddWithValue("@p", hashedPassword);
                         cmd.Parameters.AddWithValue("@e", email);
                         cmd.Parameters.AddWithValue("@b", birthday);
                         cmd.ExecuteNonQuery();
@@ -110,13 +123,23 @@ namespace ServerApp
                 using (var conn = new SqliteConnection(connString))
                 {
                     conn.Open();
-                    string sql = "SELECT COUNT(*) FROM Users WHERE Username=@u AND Password=@p";
+
+                    string sql = "SELECT Password FROM Users WHERE Username=@u";
                     using (var cmd = new SqliteCommand(sql, conn))
                     {
                         cmd.Parameters.AddWithValue("@u", username);
-                        cmd.Parameters.AddWithValue("@p", password);
-                        long count = (long)cmd.ExecuteScalar();
-                        return count > 0 ? "OK|Đăng nhập thành công!" : "FAIL|Sai tài khoản hoặc mật khẩu!";
+                        var result = cmd.ExecuteScalar();
+
+                        if (result == null)
+                            return "FAIL|Tài khoản không tồn tại!";
+
+                        string storedHashedPassword = result.ToString();
+                        string hashedInput = HashPassword(password);
+
+                        if (hashedInput == storedHashedPassword)
+                            return "OK|Đăng nhập thành công!";
+                        else
+                            return "FAIL|Sai mật khẩu!";
                     }
                 }
             }

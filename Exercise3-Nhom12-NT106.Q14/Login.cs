@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Net.Sockets;
+using System.Text;
 using System.Windows.Forms;
 
 namespace Exercise3_Nhom12_NT106.Q14
@@ -8,6 +10,7 @@ namespace Exercise3_Nhom12_NT106.Q14
         public Login()
         {
             InitializeComponent();
+
         }
 
         private void lblMoiDen_Click(object sender, EventArgs e)
@@ -31,11 +34,46 @@ namespace Exercise3_Nhom12_NT106.Q14
             }
         }
 
+
+        private string SendRequest(string message)
+        {
+            try
+            {
+                using (TcpClient client = new TcpClient("127.0.0.1", 5000))
+                using (NetworkStream stream = client.GetStream())
+                {
+                    byte[] data = Encoding.UTF8.GetBytes(message);
+                    stream.Write(data, 0, data.Length);
+
+                    byte[] buffer = new byte[1024];
+                    int byteCount = stream.Read(buffer, 0, buffer.Length);
+                    return Encoding.UTF8.GetString(buffer, 0, byteCount);
+                }
+            }
+            catch (Exception ex)
+            {
+                return "FAIL|" + ex.Message;
+            }
+        }
+
+
         private void btnĐăngNhập_Click(object sender, EventArgs e)
         {
-            if (txtTK.Text == "admin" && txtMK.Text == "admin")
+            string username = txtTK.Text.Trim();
+            string password = txtMK.Text.Trim();
+
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
-                MessageBox.Show("Đăng nhập thành công");
+                MessageBox.Show("Vui lòng nhập đầy đủ tài khoản và mật khẩu!");
+                return;
+            }
+
+            string response = SendRequest($"LOGIN|{username}|{password}");
+            string[] parts = response.Split('|');
+
+            if (parts[0] == "OK")
+            {
+                MessageBox.Show(parts[1]);
                 this.Hide();
                 Dashboard frm = new Dashboard();
                 frm.ShowDialog();
@@ -43,9 +81,10 @@ namespace Exercise3_Nhom12_NT106.Q14
             }
             else
             {
-                MessageBox.Show("Sai tài khoản hoặc mật khẩu");
+                MessageBox.Show(parts.Length > 1 ? parts[1] : "Lỗi kết nối server!");
             }
         }
+
 
         private void btnĐK_Click(object sender, EventArgs e)
         {

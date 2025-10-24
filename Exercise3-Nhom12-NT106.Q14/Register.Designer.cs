@@ -42,10 +42,10 @@
             // 
             btnĐK.BackColor = Color.Lime;
             btnĐK.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnĐK.Location = new Point(319, 511);
-            btnĐK.Margin = new Padding(3, 4, 3, 4);
+            btnĐK.Location = new Point(399, 639);
+            btnĐK.Margin = new Padding(4, 5, 4, 5);
             btnĐK.Name = "btnĐK";
-            btnĐK.Size = new Size(115, 48);
+            btnĐK.Size = new Size(144, 60);
             btnĐK.TabIndex = 0;
             btnĐK.Text = "Đăng Kí";
             btnĐK.UseVisualStyleBackColor = false;
@@ -54,9 +54,10 @@
             // lblEmail
             // 
             lblEmail.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblEmail.Location = new Point(63, 42);
+            lblEmail.Location = new Point(79, 52);
+            lblEmail.Margin = new Padding(4, 0, 4, 0);
             lblEmail.Name = "lblEmail";
-            lblEmail.Size = new Size(132, 29);
+            lblEmail.Size = new Size(165, 36);
             lblEmail.TabIndex = 1;
             lblEmail.Text = "Email";
             lblEmail.TextAlign = ContentAlignment.MiddleLeft;
@@ -64,9 +65,10 @@
             // lblTK
             // 
             lblTK.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTK.Location = new Point(63, 119);
+            lblTK.Location = new Point(79, 149);
+            lblTK.Margin = new Padding(4, 0, 4, 0);
             lblTK.Name = "lblTK";
-            lblTK.Size = new Size(132, 29);
+            lblTK.Size = new Size(165, 36);
             lblTK.TabIndex = 2;
             lblTK.Text = "Tài Khoản";
             lblTK.TextAlign = ContentAlignment.MiddleLeft;
@@ -74,9 +76,10 @@
             // lblMK
             // 
             lblMK.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblMK.Location = new Point(63, 191);
+            lblMK.Location = new Point(79, 239);
+            lblMK.Margin = new Padding(4, 0, 4, 0);
             lblMK.Name = "lblMK";
-            lblMK.Size = new Size(132, 29);
+            lblMK.Size = new Size(165, 36);
             lblMK.TabIndex = 3;
             lblMK.Text = "Mật Khẩu";
             lblMK.TextAlign = ContentAlignment.MiddleLeft;
@@ -84,9 +87,10 @@
             // lblNLMK
             // 
             lblNLMK.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblNLMK.Location = new Point(63, 288);
+            lblNLMK.Location = new Point(79, 360);
+            lblNLMK.Margin = new Padding(4, 0, 4, 0);
             lblNLMK.Name = "lblNLMK";
-            lblNLMK.Size = new Size(191, 29);
+            lblNLMK.Size = new Size(239, 36);
             lblNLMK.TabIndex = 4;
             lblNLMK.Text = "Nhập Lại Mật Khẩu";
             lblNLMK.TextAlign = ContentAlignment.MiddleLeft;
@@ -94,48 +98,48 @@
             // txtEmail
             // 
             txtEmail.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtEmail.Location = new Point(292, 44);
-            txtEmail.Margin = new Padding(3, 4, 3, 4);
+            txtEmail.Location = new Point(365, 55);
+            txtEmail.Margin = new Padding(4, 5, 4, 5);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(268, 27);
+            txtEmail.Size = new Size(334, 31);
             txtEmail.TabIndex = 5;
             // 
             // txtTK
             // 
             txtTK.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtTK.Location = new Point(292, 121);
-            txtTK.Margin = new Padding(3, 4, 3, 4);
+            txtTK.Location = new Point(365, 151);
+            txtTK.Margin = new Padding(4, 5, 4, 5);
             txtTK.Name = "txtTK";
-            txtTK.Size = new Size(268, 27);
+            txtTK.Size = new Size(334, 31);
             txtTK.TabIndex = 6;
             // 
             // txtMK
             // 
             txtMK.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtMK.Location = new Point(292, 193);
-            txtMK.Margin = new Padding(3, 4, 3, 4);
+            txtMK.Location = new Point(365, 241);
+            txtMK.Margin = new Padding(4, 5, 4, 5);
             txtMK.Name = "txtMK";
-            txtMK.Size = new Size(268, 27);
+            txtMK.Size = new Size(334, 31);
             txtMK.TabIndex = 7;
             txtMK.TextChanged += txtMK_TextChanged;
             // 
             // txtNLMK
             // 
             txtNLMK.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtNLMK.Location = new Point(292, 288);
-            txtNLMK.Margin = new Padding(3, 4, 3, 4);
+            txtNLMK.Location = new Point(365, 360);
+            txtNLMK.Margin = new Padding(4, 5, 4, 5);
             txtNLMK.Name = "txtNLMK";
-            txtNLMK.Size = new Size(268, 27);
+            txtNLMK.Size = new Size(334, 31);
             txtNLMK.TabIndex = 8;
             txtNLMK.TextChanged += txtNLMK_TextChanged;
             // 
             // btnShow1
             // 
             btnShow1.FlatStyle = FlatStyle.Flat;
-            btnShow1.Location = new Point(521, 193);
-            btnShow1.Margin = new Padding(3, 4, 3, 4);
+            btnShow1.Location = new Point(651, 241);
+            btnShow1.Margin = new Padding(4, 5, 4, 5);
             btnShow1.Name = "btnShow1";
-            btnShow1.Size = new Size(39, 31);
+            btnShow1.Size = new Size(49, 39);
             btnShow1.TabIndex = 9;
             btnShow1.UseVisualStyleBackColor = true;
             btnShow1.Click += button2_Click;
@@ -143,10 +147,10 @@
             // btnShow2
             // 
             btnShow2.FlatStyle = FlatStyle.Flat;
-            btnShow2.Location = new Point(521, 288);
-            btnShow2.Margin = new Padding(3, 4, 3, 4);
+            btnShow2.Location = new Point(651, 360);
+            btnShow2.Margin = new Padding(4, 5, 4, 5);
             btnShow2.Name = "btnShow2";
-            btnShow2.Size = new Size(39, 31);
+            btnShow2.Size = new Size(49, 39);
             btnShow2.TabIndex = 10;
             btnShow2.UseVisualStyleBackColor = true;
             btnShow2.Click += btnShow2_Click;
@@ -154,10 +158,10 @@
             // btnHide1
             // 
             btnHide1.FlatStyle = FlatStyle.Flat;
-            btnHide1.Location = new Point(521, 193);
-            btnHide1.Margin = new Padding(3, 4, 3, 4);
+            btnHide1.Location = new Point(651, 241);
+            btnHide1.Margin = new Padding(4, 5, 4, 5);
             btnHide1.Name = "btnHide1";
-            btnHide1.Size = new Size(39, 31);
+            btnHide1.Size = new Size(49, 39);
             btnHide1.TabIndex = 11;
             btnHide1.UseVisualStyleBackColor = true;
             btnHide1.Click += btnHide1_Click;
@@ -165,10 +169,10 @@
             // btnHide2
             // 
             btnHide2.FlatStyle = FlatStyle.Flat;
-            btnHide2.Location = new Point(521, 288);
-            btnHide2.Margin = new Padding(3, 4, 3, 4);
+            btnHide2.Location = new Point(651, 360);
+            btnHide2.Margin = new Padding(4, 5, 4, 5);
             btnHide2.Name = "btnHide2";
-            btnHide2.Size = new Size(39, 31);
+            btnHide2.Size = new Size(49, 39);
             btnHide2.TabIndex = 12;
             btnHide2.UseVisualStyleBackColor = true;
             btnHide2.Click += btnHide2_Click;
@@ -180,41 +184,46 @@
             // lblFN
             // 
             lblFN.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold);
-            lblFN.Location = new Point(63, 372);
+            lblFN.Location = new Point(79, 465);
+            lblFN.Margin = new Padding(4, 0, 4, 0);
             lblFN.Name = "lblFN";
-            lblFN.Size = new Size(162, 25);
+            lblFN.Size = new Size(202, 31);
             lblFN.TabIndex = 13;
             lblFN.Text = "Họ và tên";
             // 
             // lblNS
             // 
             lblNS.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold);
-            lblNS.Location = new Point(63, 453);
+            lblNS.Location = new Point(79, 566);
+            lblNS.Margin = new Padding(4, 0, 4, 0);
             lblNS.Name = "lblNS";
-            lblNS.Size = new Size(162, 25);
+            lblNS.Size = new Size(202, 31);
             lblNS.TabIndex = 14;
             lblNS.Text = "Ngày Sinh";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(292, 372);
+            textBox1.Location = new Point(365, 465);
+            textBox1.Margin = new Padding(4);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(268, 34);
+            textBox1.Size = new Size(334, 42);
             textBox1.TabIndex = 15;
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(292, 453);
+            dateTimePicker1.Location = new Point(365, 566);
+            dateTimePicker1.Margin = new Padding(4);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(268, 27);
+            dateTimePicker1.Size = new Size(334, 31);
             dateTimePicker1.TabIndex = 16;
+            dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
             // 
             // Register
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 562);
+            ClientSize = new Size(1000, 702);
             Controls.Add(dateTimePicker1);
             Controls.Add(textBox1);
             Controls.Add(lblNS);
@@ -232,11 +241,11 @@
             Controls.Add(lblTK);
             Controls.Add(lblEmail);
             Controls.Add(btnĐK);
-            Margin = new Padding(3, 4, 3, 4);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "Register";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Register";
-            Load += Form2_Load;
+           // Load += Form2_Load;
             ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
             ResumeLayout(false);
             PerformLayout();

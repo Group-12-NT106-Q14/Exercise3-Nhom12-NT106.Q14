@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\ServerApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D8F8C7B0-E5C3-475D-ACD6-99B3B829F74E}|ServerApp.csproj|d:\\group-12-nt106.q14\\exercise3-nhom12-nt106.q14\\exercise3-nhom12-nt106.q14\\serverapp\\tcpserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8F8C7B0-E5C3-475D-ACD6-99B3B829F74E}|ServerApp.csproj|solutionrelative:tcpserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D8F8C7B0-E5C3-475D-ACD6-99B3B829F74E}|ServerApp.csproj|d:\\group-12-nt106.q14\\exercise3-nhom12-nt106.q14\\exercise3-nhom12-nt106.q14\\serverapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8F8C7B0-E5C3-475D-ACD6-99B3B829F74E}|ServerApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8F8C7B0-E5C3-475D-ACD6-99B3B829F74E}|ServerApp.csproj|d:\\group-12-nt106.q14\\exercise3-nhom12-nt106.q14\\exercise3-nhom12-nt106.q14\\serverapp\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8F8C7B0-E5C3-475D-ACD6-99B3B829F74E}|ServerApp.csproj|solutionrelative:database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,12 +35,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TCPServer.cs",
+              "DocumentMoniker": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\ServerApp\\TCPServer.cs",
+              "RelativeDocumentMoniker": "TCPServer.cs",
+              "ToolTip": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\ServerApp\\TCPServer.cs",
+              "RelativeToolTip": "TCPServer.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T16:30:00.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Database.cs",
+              "DocumentMoniker": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\ServerApp\\Database.cs",
+              "RelativeDocumentMoniker": "Database.cs",
+              "ToolTip": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\ServerApp\\Database.cs",
+              "RelativeToolTip": "Database.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T16:26:36.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\ServerApp\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\ServerApp\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T16:13:31.683Z",
               "EditorCaption": ""

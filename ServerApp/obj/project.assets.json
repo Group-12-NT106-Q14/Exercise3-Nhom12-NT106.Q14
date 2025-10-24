@@ -337,11 +337,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\ServerApp\\ServerApp.csproj",
+      "projectUniqueName": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\ServerApp\\ServerApp.csproj",
       "projectName": "ServerApp",
-      "projectPath": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\ServerApp\\ServerApp.csproj",
+      "projectPath": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\ServerApp\\ServerApp.csproj",
       "packagesPath": "C:\\Users\\Shiba\\.nuget\\packages\\",
-      "outputPath": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\ServerApp\\obj\\",
+      "outputPath": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\ServerApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Shiba\\AppData\\Roaming\\NuGet\\NuGet.Config",

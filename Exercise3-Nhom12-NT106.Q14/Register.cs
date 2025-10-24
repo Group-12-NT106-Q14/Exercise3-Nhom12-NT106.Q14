@@ -13,19 +13,17 @@ namespace Exercise3_Nhom12_NT106.Q14
             InitializeComponent();
         }
 
-        // ✅ Kiểm tra định dạng email
         private bool IsValidEmail(string email)
         {
             string emailPattern = @"^[^\@\s]+@[^\@\s]+\.[^\@\s]+$";
             return Regex.IsMatch(email, emailPattern);
         }
 
-        // ✅ Hàm gửi request đến Server
         private string SendRequest(string message)
         {
             try
             {
-                using (TcpClient client = new TcpClient("127.0.0.1", 5000)) // kết nối tới server cục bộ
+                using (TcpClient client = new TcpClient("127.0.0.1", 5000))
                 using (NetworkStream stream = client.GetStream())
                 {
                     byte[] data = Encoding.UTF8.GetBytes(message);
@@ -42,39 +40,34 @@ namespace Exercise3_Nhom12_NT106.Q14
             }
         }
 
-        // ✅ Xử lý khi nhấn nút Đăng ký
         private void btnĐK_Click(object sender, EventArgs e)
         {
             errorProvider1.Clear();
 
-            // Kiểm tra dữ liệu
             if (string.IsNullOrWhiteSpace(txtTK.Text))
                 errorProvider1.SetError(txtTK, "Vui lòng nhập tài khoản");
-
+            if (string.IsNullOrWhiteSpace(textBox1.Text))
+                errorProvider1.SetError(textBox1, "Vui lòng nhập họ và tên");
             if (string.IsNullOrWhiteSpace(txtEmail.Text))
                 errorProvider1.SetError(txtEmail, "Vui lòng nhập email");
-
             if (!IsValidEmail(txtEmail.Text))
                 errorProvider1.SetError(txtEmail, "Email không hợp lệ");
-
             if (string.IsNullOrWhiteSpace(txtMK.Text))
                 errorProvider1.SetError(txtMK, "Vui lòng nhập mật khẩu");
-
             if (string.IsNullOrWhiteSpace(txtNLMK.Text))
                 errorProvider1.SetError(txtNLMK, "Vui lòng nhập lại mật khẩu");
-
             if (txtMK.TextLength < 8)
                 errorProvider1.SetError(txtMK, "Mật khẩu phải lớn hơn 8 ký tự");
-
             if (txtMK.Text != txtNLMK.Text)
                 errorProvider1.SetError(txtNLMK, "Mật khẩu không khớp");
 
-            bool ok = !string.IsNullOrWhiteSpace(txtTK.Text) &&
-                      !string.IsNullOrWhiteSpace(txtMK.Text) &&
-                      !string.IsNullOrWhiteSpace(txtNLMK.Text) &&
-                      txtMK.TextLength >= 8 &&
-                      txtMK.Text == txtNLMK.Text &&
-                      IsValidEmail(txtEmail.Text);
+            bool ok = !string.IsNullOrWhiteSpace(txtTK.Text)
+                && !string.IsNullOrWhiteSpace(textBox1.Text)
+                && !string.IsNullOrWhiteSpace(txtMK.Text)
+                && !string.IsNullOrWhiteSpace(txtNLMK.Text)
+                && txtMK.TextLength >= 8
+                && txtMK.Text == txtNLMK.Text
+                && IsValidEmail(txtEmail.Text);
 
             if (!ok)
             {
@@ -83,31 +76,37 @@ namespace Exercise3_Nhom12_NT106.Q14
                 return;
             }
 
-            // ✅ Gửi yêu cầu REGISTER đến server
             string username = txtTK.Text.Trim();
             string password = txtMK.Text.Trim();
+            string fullname = textBox1.Text.Trim();
             string email = txtEmail.Text.Trim();
             string birthday = dateTimePicker1.Value.ToString("yyyy-MM-dd");
 
-            string response = SendRequest($"REGISTER|{username}|{password}|{email}|{birthday}");
-            string[] parts = response.Split('|');
+            try
+            {
+                string response = SendRequest($"REGISTER|{username}|{password}|{fullname}|{email}|{birthday}");
+                string[] parts = response.Split('|');
 
-            if (parts[0] == "OK")
-            {
-                MessageBox.Show(parts[1], "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Hide();
-                var frm = new Login();
-                frm.ShowDialog();
-                this.Close();
+                if (parts[0] == "OK")
+                {
+                    MessageBox.Show(parts[1], "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Hide();
+                    var frm = new Login();
+                    frm.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show(parts.Length > 1 ? parts[1] : "Lỗi kết nối đến server!",
+                        "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show(parts.Length > 1 ? parts[1] : "Lỗi kết nối đến server!",
-                    "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lỗi đăng ký: " + ex.Message);
             }
         }
 
-        // 👁‍🗨 Ẩn/hiện mật khẩu
         private void button2_Click(object sender, EventArgs e)
         {
             this.btnShow1.Visible = false;

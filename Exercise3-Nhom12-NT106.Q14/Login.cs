@@ -75,7 +75,7 @@ namespace Exercise3_Nhom12_NT106.Q14
             {
                 MessageBox.Show(parts[1]);
                 this.Hide();
-                Dashboard frm = new Dashboard();
+                Dashboard frm = new Dashboard(username);
                 frm.ShowDialog();
                 this.Show();
             }

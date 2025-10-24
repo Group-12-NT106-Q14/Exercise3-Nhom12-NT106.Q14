@@ -1,14 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\",
+  "WorkspaceRootPath": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{71DFCCBD-B31A-4E88-8DF6-910242D20B1A}|Exercise3-Nhom12-NT106.Q14.csproj|d:\\group-12-nt106.q14\\exercise3-nhom12-nt106.q14\\exercise3-nhom12-nt106.q14\\exercise3-nhom12-nt106.q14\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{71DFCCBD-B31A-4E88-8DF6-910242D20B1A}|Exercise3-Nhom12-NT106.Q14.csproj|d:\\group-12-nt106.q14\\exercise3-nhom12-nt106.q14\\exercise3-nhom12-nt106.q14\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71DFCCBD-B31A-4E88-8DF6-910242D20B1A}|Exercise3-Nhom12-NT106.Q14.csproj|solutionrelative:dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71DFCCBD-B31A-4E88-8DF6-910242D20B1A}|Exercise3-Nhom12-NT106.Q14.csproj|d:\\group-12-nt106.q14\\exercise3-nhom12-nt106.q14\\exercise3-nhom12-nt106.q14\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71DFCCBD-B31A-4E88-8DF6-910242D20B1A}|Exercise3-Nhom12-NT106.Q14.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71DFCCBD-B31A-4E88-8DF6-910242D20B1A}|Exercise3-Nhom12-NT106.Q14.csproj|d:\\group-12-nt106.q14\\exercise3-nhom12-nt106.q14\\exercise3-nhom12-nt106.q14\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{71DFCCBD-B31A-4E88-8DF6-910242D20B1A}|Exercise3-Nhom12-NT106.Q14.csproj|solutionrelative:dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{71DFCCBD-B31A-4E88-8DF6-910242D20B1A}|Exercise3-Nhom12-NT106.Q14.csproj|d:\\group-12-nt106.q14\\exercise3-nhom12-nt106.q14\\exercise3-nhom12-nt106.q14\\exercise3-nhom12-nt106.q14\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71DFCCBD-B31A-4E88-8DF6-910242D20B1A}|Exercise3-Nhom12-NT106.Q14.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{71DFCCBD-B31A-4E88-8DF6-910242D20B1A}|Exercise3-Nhom12-NT106.Q14.csproj|d:\\group-12-nt106.q14\\exercise3-nhom12-nt106.q14\\exercise3-nhom12-nt106.q14\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{71DFCCBD-B31A-4E88-8DF6-910242D20B1A}|Exercise3-Nhom12-NT106.Q14.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71DFCCBD-B31A-4E88-8DF6-910242D20B1A}|Exercise3-Nhom12-NT106.Q14.csproj|d:\\group-12-nt106.q14\\exercise3-nhom12-nt106.q14\\exercise3-nhom12-nt106.q14\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71DFCCBD-B31A-4E88-8DF6-910242D20B1A}|Exercise3-Nhom12-NT106.Q14.csproj|solutionrelative:register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71DFCCBD-B31A-4E88-8DF6-910242D20B1A}|Exercise3-Nhom12-NT106.Q14.csproj|d:\\group-12-nt106.q14\\exercise3-nhom12-nt106.q14\\exercise3-nhom12-nt106.q14\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{71DFCCBD-B31A-4E88-8DF6-910242D20B1A}|Exercise3-Nhom12-NT106.Q14.csproj|solutionrelative:register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,10 +47,60 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Dashboard.cs [Design]",
-              "DocumentMoniker": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Dashboard.cs",
+              "Title": "Dashboard.cs",
+              "DocumentMoniker": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Dashboard.cs",
               "RelativeDocumentMoniker": "Dashboard.cs",
-              "ToolTip": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Dashboard.cs [Design]",
+              "ToolTip": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Dashboard.cs",
+              "RelativeToolTip": "Dashboard.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T18:26:41.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Login.cs [Design]",
+              "RelativeToolTip": "Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T18:22:56.993Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Register.cs",
+              "DocumentMoniker": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Register.cs",
+              "RelativeDocumentMoniker": "Register.cs",
+              "ToolTip": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Register.cs",
+              "RelativeToolTip": "Register.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAkwFAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T18:22:49.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Register.cs [Design]",
+              "DocumentMoniker": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Register.cs",
+              "RelativeDocumentMoniker": "Register.cs",
+              "ToolTip": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Register.cs [Design]",
+              "RelativeToolTip": "Register.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T18:22:48.248Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dashboard.cs [Design]",
+              "DocumentMoniker": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Dashboard.cs",
+              "RelativeDocumentMoniker": "Dashboard.cs",
+              "ToolTip": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Dashboard.cs [Design]",
               "RelativeToolTip": "Dashboard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T16:46:24.839Z",
@@ -44,11 +110,11 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Login.cs",
-              "DocumentMoniker": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Login.cs",
+              "DocumentMoniker": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
-              "ToolTip": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Login.cs",
+              "ToolTip": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Login.cs",
               "RelativeToolTip": "Login.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAowE0AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T16:36:11.34Z",
               "EditorCaption": ""

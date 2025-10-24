@@ -40,10 +40,8 @@ namespace ServerApp
 
                 string response = HandleRequest(request);
                 byte[] responseBytes = Encoding.UTF8.GetBytes(response);
-
                 stream.Write(responseBytes, 0, responseBytes.Length);
             }
-
             client.Close();
         }
 
@@ -55,9 +53,11 @@ namespace ServerApp
                 string action = parts[0];
 
                 if (action == "REGISTER")
-                    return RegisterUser(parts[1], parts[2], parts[3], parts[4]);
+                    return RegisterUser(parts[1], parts[2], parts[3], parts[4], parts[5]);
                 else if (action == "LOGIN")
                     return LoginUser(parts[1], parts[2]);
+                else if (action == "GETINFO")
+                    return GetUserInfo(parts[1]);
                 else
                     return "FAIL|Lệnh không hợp lệ";
             }
@@ -77,7 +77,8 @@ namespace ServerApp
             }
         }
 
-        private string RegisterUser(string username, string password, string email, string birthday)
+        // Đăng ký - thêm FullName vào INSERT
+        private string RegisterUser(string username, string password, string fullname, string email, string birthday)
         {
             try
             {
@@ -94,14 +95,16 @@ namespace ServerApp
                         cmd.Parameters.AddWithValue("@e", email);
 
                         long count = (long)cmd.ExecuteScalar();
-                        if (count > 0) return "FAIL|Tài khoản hoặc email đã tồn tại!";
+                        if (count > 0)
+                            return "FAIL|Tài khoản hoặc email đã tồn tại!";
                     }
 
-                    string insert = "INSERT INTO Users (Username, Password, Email, Birthday) VALUES (@u,@p,@e,@b)";
+                    string insert = "INSERT INTO Users (Username, Password, FullName, Email, Birthday) VALUES (@u,@p,@f,@e,@b)";
                     using (var cmd = new SqliteCommand(insert, conn))
                     {
                         cmd.Parameters.AddWithValue("@u", username);
                         cmd.Parameters.AddWithValue("@p", hashedPassword);
+                        cmd.Parameters.AddWithValue("@f", fullname);
                         cmd.Parameters.AddWithValue("@e", email);
                         cmd.Parameters.AddWithValue("@b", birthday);
                         cmd.ExecuteNonQuery();
@@ -140,6 +143,38 @@ namespace ServerApp
                             return "OK|Đăng nhập thành công!";
                         else
                             return "FAIL|Sai mật khẩu!";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return "FAIL|" + ex.Message;
+            }
+        }
+
+        private string GetUserInfo(string username)
+        {
+            try
+            {
+                using (var conn = new SqliteConnection(connString))
+                {
+                    conn.Open();
+                    string sql = "SELECT Username, FullName, Email, Birthday FROM Users WHERE Username=@u";
+                    using (var cmd = new SqliteCommand(sql, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@u", username);
+                        using (var reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                string user = reader["Username"]?.ToString();
+                                string fullname = reader["FullName"]?.ToString();
+                                string email = reader["Email"]?.ToString();
+                                string birthday = reader["Birthday"]?.ToString();
+                                return $"OK|{user}|{fullname}|{email}|{birthday}";
+                            }
+                            else return "FAIL|Không tìm thấy người dùng!";
+                        }
                     }
                 }
             }

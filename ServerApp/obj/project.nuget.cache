@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MA/Tpyt/4uE=",
+  "dgSpecHash": "s2tLOaspoN8=",
   "success": true,
-  "projectFilePath": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\ServerApp\\ServerApp.csproj",
+  "projectFilePath": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\ServerApp\\ServerApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Shiba\\.nuget\\packages\\microsoft.data.sqlite\\9.0.10\\microsoft.data.sqlite.9.0.10.nupkg.sha512",
     "C:\\Users\\Shiba\\.nuget\\packages\\microsoft.data.sqlite.core\\9.0.10\\microsoft.data.sqlite.core.9.0.10.nupkg.sha512",

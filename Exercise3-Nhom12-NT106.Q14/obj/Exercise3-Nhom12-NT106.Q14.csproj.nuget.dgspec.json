@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14.csproj": {}
+    "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14.csproj": {}
   },
   "projects": {
-    "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14.csproj": {
+    "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14.csproj",
+        "projectUniqueName": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14.csproj",
         "projectName": "Exercise3-Nhom12-NT106.Q14",
-        "projectPath": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14.csproj",
+        "projectPath": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14.csproj",
         "packagesPath": "C:\\Users\\Shiba\\.nuget\\packages\\",
-        "outputPath": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\obj\\",
+        "outputPath": "D:\\Group-12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\Exercise3-Nhom12-NT106.Q14\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Shiba\\AppData\\Roaming\\NuGet\\NuGet.Config",

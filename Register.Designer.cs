@@ -17,6 +17,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             btnĐK = new Button();
             lblEmail = new Label();
             lblTK = new Label();
@@ -53,7 +54,9 @@
             // 
             // lblEmail
             // 
+            lblEmail.BackColor = Color.Transparent;
             lblEmail.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblEmail.ForeColor = Color.White;
             lblEmail.Location = new Point(63, 42);
             lblEmail.Name = "lblEmail";
             lblEmail.Size = new Size(132, 29);
@@ -63,7 +66,9 @@
             // 
             // lblTK
             // 
+            lblTK.BackColor = Color.Transparent;
             lblTK.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTK.ForeColor = Color.White;
             lblTK.Location = new Point(63, 119);
             lblTK.Name = "lblTK";
             lblTK.Size = new Size(132, 29);
@@ -73,7 +78,9 @@
             // 
             // lblMK
             // 
+            lblMK.BackColor = Color.Transparent;
             lblMK.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblMK.ForeColor = Color.White;
             lblMK.Location = new Point(63, 191);
             lblMK.Name = "lblMK";
             lblMK.Size = new Size(132, 29);
@@ -83,7 +90,9 @@
             // 
             // lblNLMK
             // 
+            lblNLMK.BackColor = Color.Transparent;
             lblNLMK.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblNLMK.ForeColor = Color.White;
             lblNLMK.Location = new Point(63, 288);
             lblNLMK.Name = "lblNLMK";
             lblNLMK.Size = new Size(191, 29);
@@ -132,10 +141,11 @@
             // btnShow1
             // 
             btnShow1.FlatStyle = FlatStyle.Flat;
-            btnShow1.Location = new Point(521, 193);
+            btnShow1.Image = (Image)resources.GetObject("btnShow1.Image");
+            btnShow1.Location = new Point(521, 192);
             btnShow1.Margin = new Padding(3, 4, 3, 4);
             btnShow1.Name = "btnShow1";
-            btnShow1.Size = new Size(39, 31);
+            btnShow1.Size = new Size(39, 27);
             btnShow1.TabIndex = 9;
             btnShow1.UseVisualStyleBackColor = true;
             btnShow1.Click += button2_Click;
@@ -143,10 +153,11 @@
             // btnShow2
             // 
             btnShow2.FlatStyle = FlatStyle.Flat;
+            btnShow2.Image = (Image)resources.GetObject("btnShow2.Image");
             btnShow2.Location = new Point(521, 288);
             btnShow2.Margin = new Padding(3, 4, 3, 4);
             btnShow2.Name = "btnShow2";
-            btnShow2.Size = new Size(39, 31);
+            btnShow2.Size = new Size(39, 27);
             btnShow2.TabIndex = 10;
             btnShow2.UseVisualStyleBackColor = true;
             btnShow2.Click += btnShow2_Click;
@@ -154,10 +165,11 @@
             // btnHide1
             // 
             btnHide1.FlatStyle = FlatStyle.Flat;
+            btnHide1.Image = (Image)resources.GetObject("btnHide1.Image");
             btnHide1.Location = new Point(521, 193);
             btnHide1.Margin = new Padding(3, 4, 3, 4);
             btnHide1.Name = "btnHide1";
-            btnHide1.Size = new Size(39, 31);
+            btnHide1.Size = new Size(39, 27);
             btnHide1.TabIndex = 11;
             btnHide1.UseVisualStyleBackColor = true;
             btnHide1.Click += btnHide1_Click;
@@ -165,10 +177,11 @@
             // btnHide2
             // 
             btnHide2.FlatStyle = FlatStyle.Flat;
+            btnHide2.Image = (Image)resources.GetObject("btnHide2.Image");
             btnHide2.Location = new Point(521, 288);
             btnHide2.Margin = new Padding(3, 4, 3, 4);
             btnHide2.Name = "btnHide2";
-            btnHide2.Size = new Size(39, 31);
+            btnHide2.Size = new Size(39, 27);
             btnHide2.TabIndex = 12;
             btnHide2.UseVisualStyleBackColor = true;
             btnHide2.Click += btnHide2_Click;
@@ -179,7 +192,9 @@
             // 
             // lblFN
             // 
+            lblFN.BackColor = Color.Transparent;
             lblFN.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold);
+            lblFN.ForeColor = Color.White;
             lblFN.Location = new Point(63, 372);
             lblFN.Name = "lblFN";
             lblFN.Size = new Size(162, 25);
@@ -188,7 +203,9 @@
             // 
             // lblNS
             // 
+            lblNS.BackColor = Color.Transparent;
             lblNS.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold);
+            lblNS.ForeColor = Color.White;
             lblNS.Location = new Point(63, 453);
             lblNS.Name = "lblNS";
             lblNS.Size = new Size(162, 25);
@@ -214,7 +231,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 562);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(738, 785);
             Controls.Add(dateTimePicker1);
             Controls.Add(textBox1);
             Controls.Add(lblNS);

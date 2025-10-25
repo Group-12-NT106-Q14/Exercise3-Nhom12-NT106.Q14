@@ -17,38 +17,38 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            lblDKTK = new System.Windows.Forms.Label();
-            btnĐăngNhập = new System.Windows.Forms.Button();
-            btnĐK = new System.Windows.Forms.Button();
-            txtTK = new System.Windows.Forms.TextBox();
-            txtMK = new System.Windows.Forms.TextBox();
-            btnShow = new System.Windows.Forms.Button();
-            btnHide = new System.Windows.Forms.Button();
-            lblTK = new System.Windows.Forms.Label();
-            lblMK = new System.Windows.Forms.Label();
+            lblDKTK = new Label();
+            btnĐăngNhập = new Button();
+            btnĐK = new Button();
+            txtTK = new TextBox();
+            txtMK = new TextBox();
+            btnShow = new Button();
+            btnHide = new Button();
+            lblTK = new Label();
+            lblMK = new Label();
             SuspendLayout();
             // 
             // lblDKTK
             // 
-            lblDKTK.BackColor = System.Drawing.Color.Transparent;
-            lblDKTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            lblDKTK.ForeColor = System.Drawing.Color.White;
-            lblDKTK.Location = new System.Drawing.Point(161, 638);
+            lblDKTK.BackColor = Color.Transparent;
+            lblDKTK.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblDKTK.ForeColor = Color.Black;
+            lblDKTK.Location = new Point(84, 638);
             lblDKTK.Name = "lblDKTK";
-            lblDKTK.Size = new System.Drawing.Size(149, 54);
+            lblDKTK.Size = new Size(149, 54);
             lblDKTK.TabIndex = 0;
             lblDKTK.Text = "Đăng Kí Tài Khoản";
-            lblDKTK.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblDKTK.TextAlign = ContentAlignment.MiddleCenter;
             lblDKTK.Click += lblMoiDen_Click;
             // 
             // btnĐăngNhập
             // 
-            btnĐăngNhập.BackColor = System.Drawing.Color.Lime;
-            btnĐăngNhập.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            btnĐăngNhập.Location = new System.Drawing.Point(294, 381);
-            btnĐăngNhập.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btnĐăngNhập.BackColor = Color.Lime;
+            btnĐăngNhập.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnĐăngNhập.Location = new Point(294, 381);
+            btnĐăngNhập.Margin = new Padding(3, 4, 3, 4);
             btnĐăngNhập.Name = "btnĐăngNhập";
-            btnĐăngNhập.Size = new System.Drawing.Size(173, 60);
+            btnĐăngNhập.Size = new Size(173, 60);
             btnĐăngNhập.TabIndex = 2;
             btnĐăngNhập.Text = "Đăng Nhập";
             btnĐăngNhập.UseVisualStyleBackColor = false;
@@ -56,11 +56,11 @@
             // 
             // btnĐK
             // 
-            btnĐK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            btnĐK.Location = new System.Drawing.Point(316, 638);
-            btnĐK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btnĐK.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnĐK.Location = new Point(246, 638);
+            btnĐK.Margin = new Padding(3, 4, 3, 4);
             btnĐK.Name = "btnĐK";
-            btnĐK.Size = new System.Drawing.Size(384, 54);
+            btnĐK.Size = new Size(384, 54);
             btnĐK.TabIndex = 3;
             btnĐK.Text = "Tại Đây";
             btnĐK.UseVisualStyleBackColor = true;
@@ -68,34 +68,34 @@
             // 
             // txtTK
             // 
-            txtTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            txtTK.Location = new System.Drawing.Point(246, 200);
-            txtTK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtTK.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtTK.Location = new Point(246, 200);
+            txtTK.Margin = new Padding(3, 4, 3, 4);
             txtTK.Multiline = true;
             txtTK.Name = "txtTK";
-            txtTK.Size = new System.Drawing.Size(300, 39);
+            txtTK.Size = new Size(300, 39);
             txtTK.TabIndex = 5;
             // 
             // txtMK
             // 
-            txtMK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            txtMK.Location = new System.Drawing.Point(246, 289);
-            txtMK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtMK.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtMK.Location = new Point(246, 289);
+            txtMK.Margin = new Padding(3, 4, 3, 4);
             txtMK.Multiline = true;
             txtMK.Name = "txtMK";
-            txtMK.Size = new System.Drawing.Size(300, 39);
+            txtMK.Size = new Size(300, 39);
             txtMK.TabIndex = 6;
             txtMK.TextChanged += txtMK_TextChanged;
             // 
             // btnShow
             // 
-            btnShow.BackColor = System.Drawing.Color.DarkGray;
-            btnShow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnShow.Image = ((System.Drawing.Image)(resources.GetObject("btnShow.Image")));
-            btnShow.Location = new System.Drawing.Point(509, 289);
-            btnShow.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btnShow.BackColor = Color.DarkGray;
+            btnShow.FlatStyle = FlatStyle.Flat;
+            btnShow.Image = (Image)resources.GetObject("btnShow.Image");
+            btnShow.Location = new Point(509, 289);
+            btnShow.Margin = new Padding(3, 4, 3, 4);
             btnShow.Name = "btnShow";
-            btnShow.Size = new System.Drawing.Size(37, 39);
+            btnShow.Size = new Size(37, 39);
             btnShow.TabIndex = 10;
             btnShow.Text = "S";
             btnShow.UseVisualStyleBackColor = false;
@@ -103,13 +103,13 @@
             // 
             // btnHide
             // 
-            btnHide.BackColor = System.Drawing.Color.DarkGray;
-            btnHide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnHide.Image = ((System.Drawing.Image)(resources.GetObject("btnHide.Image")));
-            btnHide.Location = new System.Drawing.Point(509, 289);
-            btnHide.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btnHide.BackColor = Color.DarkGray;
+            btnHide.FlatStyle = FlatStyle.Flat;
+            btnHide.Image = (Image)resources.GetObject("btnHide.Image");
+            btnHide.Location = new Point(509, 289);
+            btnHide.Margin = new Padding(3, 4, 3, 4);
             btnHide.Name = "btnHide";
-            btnHide.Size = new System.Drawing.Size(37, 39);
+            btnHide.Size = new Size(37, 39);
             btnHide.TabIndex = 11;
             btnHide.Text = "H";
             btnHide.UseVisualStyleBackColor = false;
@@ -117,35 +117,35 @@
             // 
             // lblTK
             // 
-            lblTK.BackColor = System.Drawing.Color.Transparent;
-            lblTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            lblTK.ForeColor = System.Drawing.Color.IndianRed;
-            lblTK.Location = new System.Drawing.Point(42, 214);
+            lblTK.BackColor = Color.Transparent;
+            lblTK.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold);
+            lblTK.ForeColor = Color.IndianRed;
+            lblTK.Location = new Point(42, 214);
             lblTK.Name = "lblTK";
-            lblTK.Size = new System.Drawing.Size(163, 25);
+            lblTK.Size = new Size(163, 25);
             lblTK.TabIndex = 12;
             lblTK.Text = "Tài Khoản";
-            lblTK.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblTK.TextAlign = ContentAlignment.MiddleCenter;
             lblTK.Click += label1_Click;
             // 
             // lblMK
             // 
-            lblMK.BackColor = System.Drawing.Color.Transparent;
-            lblMK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            lblMK.ForeColor = System.Drawing.Color.IndianRed;
-            lblMK.Location = new System.Drawing.Point(42, 303);
+            lblMK.BackColor = Color.Transparent;
+            lblMK.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold);
+            lblMK.ForeColor = Color.IndianRed;
+            lblMK.Location = new Point(42, 303);
             lblMK.Name = "lblMK";
-            lblMK.Size = new System.Drawing.Size(163, 25);
+            lblMK.Size = new Size(163, 25);
             lblMK.TabIndex = 13;
             lblMK.Text = "Mật Khẩu";
-            lblMK.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblMK.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // Form1
+            // Login
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            ClientSize = new System.Drawing.Size(746, 739);
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(673, 739);
             Controls.Add(lblMK);
             Controls.Add(lblTK);
             Controls.Add(btnHide);
@@ -155,9 +155,9 @@
             Controls.Add(btnĐK);
             Controls.Add(btnĐăngNhập);
             Controls.Add(lblDKTK);
-            Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            Name = "Form1";
-            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "Login";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
             Load += Form1_Load;
             ResumeLayout(false);

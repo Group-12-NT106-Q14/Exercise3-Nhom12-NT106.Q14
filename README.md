@@ -230,7 +230,7 @@ cd Exercise3-3-Nhom12-NT106.Q14
 
 ### Màn Hình Dashboard
 
-![Giao diện Dashboard](https://hackmd.io/_uploads/ryjXtW90gg.png)
+![Giao diện Dashboard](https://sv2.anhsieuviet.com/2025/10/25/image4bf9ed2f29fe1925.png)
 
 
 *Giao diện Dashboard hiển thị thông tin người dùng sau khi đăng nhập thành công*
